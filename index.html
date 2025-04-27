@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UI Portfolio of John Watson, a Lead UI Designer and Web Developer based in the UK. Specializing in graphic design, photography, and creative web solutions.">
+  <meta name="keywords" content="UI design, web development, graphic design, photography, portfolio, freelancer, UK">
+  <meta name="author" content="John Watson">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="UI Portfolio - John Watson">
+  <meta property="og:description" content="Portfolio of John Watson, a Lead UI Designer and Web Developer based in the UK.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:image" content="https://yourwebsite.com/img/banner.png">
+  <title>UI Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Local Font Awesome -->
+  <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header sticky-top">
+    <div class="container d-flex justify-content-between align-items-center px-4 py-3">
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" class="d-flex align-items-center text-decoration-none">
+          <img src="img/logo.png" alt="UI Portfolio Logo" class="logo">
+          <span class="ms-2 text-white fw-semibold">UI Portfolio</span>
+        </a>
+        <nav class="d-none d-md-flex gap-4 align-items-center">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#blog" class="nav-link">Blog</a>
+          <div class="dropdown">
+            <a href="#pages" class="nav-link dropdown-toggle" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              <li><a class="dropdown-item" href="#">Blog Page</a></li>
+              <li><a class="dropdown-item" href="#">Elements Page</a></li>
+              <li><a class="dropdown-item" href="#">404 Page</a></li>
+              <li><a class="dropdown-item" href="#">Landing Page</a></li>
+            </ul>
+          </div>
+          <a href="#contact" class="nav-link">Contact</a>
+          <button class="btn btn-primary hire-me-btn ms-2">Hire Me</button>
+          <!-- Search bar icon -->
+          <a href="#" class="nav-link" aria-label="Search">
+            <i class="fas fa-search text-white"></i>
+          </a>
+          <!-- Light/Dark mode toggle icon -->
+          <button id="theme-toggle" class="nav-link bg-transparent border-0" aria-label="Toggle theme">
+            <i class="fas fa-moon text-white" id="moon-icon"></i>
+            <i class="fas fa-sun text-white d-none" id="sun-icon"></i>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container d-flex flex-column flex-md-row align-items-center px-4 py-5">
+      <div class="col-md-6">
+        <h1 class="display-4 fw-bold text-white">Hi, I'm John Watson</h1>
+        <h2 class="display-5 fw-light mt-2 text-white">
+          <span class="playing-words"> </span>
+        </h2>
+        <p class="mt-4 text-white">I love Graphic design and Photography and have been working on my portfolio since 2016. I can give your business a new creative start right away!</p>
+        <div class="mt-4 d-flex gap-3">
+          <button class="btn btn-primary hire-me-btn">Hire Me</button>
+          <button class="btn btn-outline-light portfolio-btn">My Portfolio</button>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <img src="img/banner.png" alt="Profile Picture" class="img-fluid rounded">
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="about" class="section">
+    <div class="container px-4">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <img src="img/bio.jpg" alt="Bio Image" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <p class="section-subtitle">My Biography</p>
+          <h2 class="section-title">A Lead UI Designer & Web Developer Based In UK</h2>
+          <p class="mt-4 text-secondary">I love Graphic design and Photography and have been working on my portfolio since 2016. I can give your business a new Creative start right away! Contact me and we will discuss your projects!</p>
+          <div class="mt-4 d-flex flex-column flex-md-row gap-4">
+            <div>
+              <p><strong>Name:</strong> John Watson</p>
+              <p><strong>Email:</strong> example@email.com</p>
+            </div>
+            <div>
+              <p><strong>From:</strong> London, UK</p>
+              <p><strong>Phone:</strong> +12 345 678 901</p>
+            </div>
+          </div>
+          <div class="mt-4 d-flex gap-2 align-items-center">
+            <p>Follow me on</p>
+            <a href="#" class="text-teal" aria-label="Behance">
+              <i class="fab fa-behance"></i>
+            </a>
+            <a href="#" class="text-teal" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="text-teal" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <div class="mt-4 d-flex gap-3">
+            <button class="btn hire-me-btn">Hire Me</button>
+            <button class="btn download-cv-btn">Download CV</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container px-4">
+      <p class="section-subtitle text-center">My Services</p>
+      <h2 class="section-title text-center">What I Do For You</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="text-teal display-6 mb-3">📄</div>
+              <h3 class="h5 fw-semibold">Web Development</h3>
+              <p class="mt-2 text-secondary">Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque laudan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="text-teal display-6 mb-3">📱</div>
+              <h3 class="h5 fw-semibold">App Development</h3>
+              <p class="mt-2 text-secondary">Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque laudan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="text-teal display-6 mb-3">📷</div>
+              <h3 class="h5 fw-semibold">Photography</h3>
+              <p class="mt-2 text-secondary">Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque laudan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="#" class="text-teal text-decoration-underline">More Services →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section bg-light">
+    <div class="container d-flex flex-column flex-md-row align-items-center px-4">
+      <div class="col-md-6">
+        <img src="img/skills.jpg" alt="Skills Image" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0 ps-md-4">
+        <p class="section-subtitle">My Skills</p>
+        <h2 class="section-title">My Featured Skills</h2>
+        <p class="mt-4 text-secondary">I specialize in Branding and Strategy, and am passionate about creating Awesome Portfolio work. And I always ready to impress the audience with my Creativity.</p>
+        <div class="mt-4">
+          <div class="mb-3">
+            <p class="fw-semibold">UI/UX Design</p>
+            <div class="progress">
+              <div class="progress-bar bg-teal" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <p class="fw-semibold">Ideas & Technology</p>
+            <div class="progress">
+              <div class="progress-bar bg-teal" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <p class="fw-semibold">Branding Design</p>
+            <div class="progress">
+              <div class="progress-bar bg-teal" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div>
+            <p class="fw-semibold">Responsive Web Design</p>
+            <div class="progress">
+              <div class="progress-bar bg-teal" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services and Profile Image Section -->
+  <section class="section bg-light">
+    <div class="container px-4 d-flex flex-column flex-md-row align-items-center">
+      <div class="col-md-6">
+        <div class="row row-cols-1 row-cols-sm-2 g-4">
+          <div class="col">
+            <div class="d-flex align-items-start gap-3">
+              <div class="text-teal fs-3">🌐</div>
+              <div>
+                <h3 class="h6 fw-semibold">Web Development</h3>
+                <p class="text-secondary">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex align-items-start gap-3">
+              <div class="text-teal fs-3">🎨</div>
+              <div>
+                <h3 class="h6 fw-semibold">Design Trends</h3>
+                <p class="text-secondary">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex align-items-start gap-3">
+              <div class="text-teal fs-3">🔍</div>
+              <div>
+                <h3 class="h6 fw-semibold">Research & Analysis</h3>
+                <p class="text-secondary">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex align-items-start gap-3">
+              <div class="text-teal fs-3">🤝</div>
+              <div>
+                <h3 class="h6 fw-semibold">Customer Support</h3>
+                <p class="text-secondary">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex align-items-start gap-3">
+              <div class="text-teal fs-3">📱</div>
+              <div>
+                <h3 class="h6 fw-semibold">Responsive Design</h3>
+                <p class="text-secondary">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex align-items-start gap-3">
+              <div class="text-teal fs-3">🖼️</div>
+              <div>
+                <h3 class="h6 fw-semibold">PSD Design</h3>
+                <p class="text-secondary">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0 ps-md-4">
+        <img src="img/banner.png" alt="Profile Picture" class="img-fluid rounded">
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section bg-light">
+    <div class="container px-4">
+      <div class="row row-cols-1 row-cols-md-4 g-4 text-center">
+        <div class="col">
+          <h3 class="display-6 fw-bold">135</h3>
+          <p class="mt-2 text-secondary">Finished Projects</p>
+        </div>
+        <div class="col">
+          <h3 class="display-6 fw-bold">225</h3>
+          <p class="mt-2 text-secondary">Working Hours</p>
+        </div>
+        <div class="col">
+          <h3 class="display-6 fw-bold">115</h3>
+          <p class="mt-2 text-secondary">Online Support</p>
+        </div>
+        <div class="col">
+          <h3 class="display-6 fw-bold">272</h3>
+          <p class="mt-2 text-secondary">Happy Customers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section">
+    <div class="container px-4">
+      <p class="section-subtitle text-center">My Portfolio</p>
+      <h2 class="section-title text-center">My Success Work</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <img src="img/blog1.jpg" alt="Work 1" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <img src="img/blog2.jpg" alt="Work 2" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <img src="img/blog3.jpg" alt="Work 3" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <img src="img/blog4.jpg" alt="Work 4" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <img src="img/blog5.jpg" alt="Work 5" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <img src="img/blog6.jpg" alt="Work 6" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partnered Companies Logos -->
+  <section class="section companies-section">
+    <div class="container px-4 text-center">
+      <div class="logos-container">
+        <div class="logos-track">
+          <img src="img/logo1.png" alt="Company 1" class="company-logo">
+          <img src="img/logo2.png" alt="Company 2" class="company-logo">
+          <img src="img/logo3.png" alt="Company 3" class="company-logo">
+          <img src="img/logo4.png" alt="Company 4" class="company-logo">
+          <img src="img/logo5.png" alt="Company 5" class="company-logo">
+          <!-- Duplicate logos for seamless looping -->
+          <img src="img/logo1.png" alt="Company 1" class="company-logo">
+          <img src="img/logo2.png" alt="Company 2" class="company-logo">
+          <img src="img/logo3.png" alt="Company 3" class="company-logo">
+          <img src="img/logo4.png" alt="Company 4" class="company-logo">
+          <img src="img/logo5.png" alt="Company 5" class="company-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container px-4 text-center">
+      <!-- Logo and Branding -->
+      <div class="mb-4">
+        <a href="#" class="d-flex justify-content-center align-items-center text-decoration-none">
+          <img src="img/logo.png" alt="UI Portfolio Logo" class="logo">
+          <span class="ms-2 text-white fw-semibold">UI Portfolio</span>
+        </a>
+      </div>
+      <!-- Contact Information -->
+      <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-4">
+        <p class="text-white mb-0"><i class="fas fa-phone-alt me-2"></i>+12 345 678 900</p>
+        <p class="text-white mb-0"><i class="fas fa-envelope me-2"></i>example@email.com</p>
+        <p class="text-white mb-0"><i class="fas fa-map-marker-alt me-2"></i>208 Avenue, UK - 62617</p>
+      </div>
+      <!-- Copyright and Social Media Icons -->
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 mb-4">
+        <p class="text-white mb-0">© 2025 UI Portfolio. All Rights Reserved | WordPress Theme by W3Layouts</p>
+        <div class="d-flex align-items-center gap-3">
+          <a href="https://facebook.com" class="social-link" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com" class="social-link" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://google.com" class="social-link" aria-label="Google">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="https://pinterest.com" class="social-link" aria-label="Pinterest">
+            <i class="fab fa-pinterest-p"></i>
+          </a>
+          <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
