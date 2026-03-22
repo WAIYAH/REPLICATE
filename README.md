@@ -1,47 +1,107 @@
-# UI Portfolio Website
+﻿# Nakola Expert Systems — Portfolio Website
+
+> **Intelligent Solutions. Built in Nairobi.**
+
+A modern, high-performance portfolio website for **Nakola Expert Systems** — a premium AI, software engineering, and cloud solutions provider based in Nairobi, Kenya.
+
+![Status](https://img.shields.io/badge/status-live-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
+
+---
+
 ## Overview
-This project is a responsive portfolio website for Lucky Nakola, a Lead UI Designer and Web Developer based in Nairobi, Kenya. The website showcases Lucky's skills, services, portfolio, and contact information, designed to attract potential clients and collaborators. The project was developed as part of a group assignment for the PLP Web Development course.
 
-## Solution Approach
-We aimed to create a modern, visually appealing, and responsive portfolio website that meets the following requirements:
+This is a conversion-focused portfolio site showcasing Nakola's services, featured projects, tech stack, client testimonials, and contact information. It is designed to attract enterprise and startup clients looking for world-class technology partners.
 
-Header: A sticky navigation bar with links, a "Hire Me" button, and icons for search and theme toggle.
-Hero Section: A full-width section with a background image, animated "playing words" text (Web Designer, Software Developer, Freelancer), and call-to-action buttons.
-About Section: A biography section with Lucky's details, contact information, and social media links.
-Services Section: Cards highlighting services offered (Web Development, App Development, Photography).
-Skills Section: Progress bars showcasing expertise in UI/UX Design, Branding, and more.
-Portfolio Section: A gallery of work samples.
-Companies Section: Animated logos of partnered companies.
-Footer: Contact information, social media links, and copyright notice.
-Extra Features: A "Back to Top" button with smooth scrolling.
+### Key Sections
 
-## Technologies Used
-HTML5: For semantic structure.
-CSS3: For styling, including animations (playing words, scrolling logos) and responsiveness.
-Bootstrap 5: For responsive layout and components (e.g., cards, grid system).
-Font Awesome 6.7.2: For icons (search, social media, back to top).
-JavaScript: For the "Back to Top" button functionality.
-Google Fonts: For typography (Barlow and Open Sans).
+- **Hero** — Bold headline with animated code block visual and tech stack preview
+- **About** — Company bio, location, team size, and social links
+- **Services** — AI & ML, Full-Stack Web & Mobile, Enterprise Systems, UI/UX Design, Cloud Architecture, Technology Consulting
+- **Skills & Tech Stack** — Progress bars and a visual tech grid (Python, React, AWS, Docker, TensorFlow, etc.)
+- **Stats** — Animated counters (projects delivered, clients, engineering hours, countries)
+- **Projects** — 6 featured project cards with descriptions and tech stack tags
+- **Testimonials** — 4 client quotes with star ratings
+- **Contact** — Form with strong CTA ("Start Your Project Today")
+- **Footer** — Multi-column with branding, quick links, contact info, and social icons
 
-## Challenges and Solutions
-Icons Not Displaying: Initially, Font Awesome icons didn’t load due to CDN issues. We resolved this by downloading Font Awesome 6.7.2 and hosting it locally.
-Responsiveness: Ensured the website looks great on all devices using Bootstrap’s grid system and custom media queries.
-Animations: Implemented the "playing words" animation using CSS keyframes and the scrolling logos animation with CSS transforms.
+### Features
 
-## Live Demo
-Link to Live Demo (Replace with your GitHub Pages or hosting link after deployment)
-Group Members
-Lucky Nakola (Team Lead, UI/UX Design, Frontend Development)
+- Dark / Light mode toggle (persisted via localStorage)
+- Sticky header with glassmorphism blur and shrink-on-scroll
+- Responsive mobile hamburger menu with smooth animation
+- Scroll-triggered fade-up animations (Intersection Observer)
+- Animated stat counters on scroll
+- Active nav link highlighting based on scroll position
+- Back-to-top button
 
-## Installation and Setup
-Clone the repository:git clone <your-repo-url>
-Navigate to the project directory:cd REPLICATE
-Open index.html in a browser, or use a local server (e.g., VS Code Live Server) for the best experience.
+---
 
-## Future Improvements
-Implement a light/dark mode toggle.
-Add a contact form in the footer.
-Integrate a blog section with dynamic content.
+## Tech Stack
+
+| Layer     | Technology                             |
+| --------- | -------------------------------------- |
+| Structure | HTML5 (semantic)                       |
+| Styling   | CSS3 (custom properties, glassmorphism)|
+| Framework | Bootstrap 5.3                          |
+| Icons     | Font Awesome 6.7.2 (self-hosted)       |
+| Fonts     | Inter, JetBrains Mono (Google Fonts)   |
+| Scripts   | Vanilla JavaScript (ES6+)              |
+
+---
+
+## Project Structure
+
+```
+├── index.html                  # Main page
+├── css/
+│   └── styles.css              # Custom styles (dark/light themes)
+├── js/
+│   └── scripts.js              # Interactions & animations
+├── img/                        # Images (hero, projects, about)
+├── fontawesome-free-6.7.2-web/ # Self-hosted Font Awesome
+├── robots.txt                  # Search engine directives
+├── .gitignore                  # Git ignore rules
+├── LICENSE                     # MIT License
+└── README.md                   # This file
+```
+
+---
+
+## Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/nakola-portfolio.git
+
+# Navigate into the project
+cd nakola-portfolio
+
+# Open in browser (or use VS Code Live Server)
+open index.html
+```
+
+No build tools or dependencies required — it is a static site ready to deploy.
+
+---
+
+## Deployment
+
+Deploy to any static hosting platform:
+
+- **Vercel** — vercel --prod
+- **Netlify** — drag-and-drop or connect repo
+- **GitHub Pages** — push to gh-pages branch
+
+Live site: [nakolaexpertsystems.vercel.app](https://nakolaexpertsystems.vercel.app/)
+
+---
 
 ## License
-This project is licensed under the MIT License. See the LICENSE.txt file for details.
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+<p align="center">
+  Built with precision by <a href="https://nakolaexpertsystems.vercel.app/">Nakola Expert Systems</a> — Intelligent solutions for forward-thinking businesses.
+</p>

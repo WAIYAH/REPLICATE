@@ -1,122 +1,161 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="UI Portfolio of John Watson, a Lead UI Designer and Web Developer based in the UK. Specializing in graphic design, photography, and creative web solutions.">
-  <meta name="keywords" content="UI design, web development, graphic design, photography, portfolio, freelancer, UK">
-  <meta name="author" content="John Watson">
+  <meta name="description" content="Nakola Expert Systems — Premium AI, software engineering & cloud solutions provider based in Nairobi. We build intelligent systems that scale businesses.">
+  <meta name="keywords" content="AI development, software engineering, cloud architecture, web development, mobile apps, Nairobi, Kenya, enterprise systems, machine learning">
+  <meta name="author" content="Nakola Expert Systems">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="UI Portfolio - John Watson">
-  <meta property="og:description" content="Portfolio of John Watson, a Lead UI Designer and Web Developer based in the UK.">
+  <meta property="og:title" content="Nakola Expert Systems — Intelligent Solutions. Built in Nairobi.">
+  <meta property="og:description" content="Premium AI, software engineering & cloud solutions provider. We build intelligent systems that scale businesses.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourwebsite.com">
-  <meta property="og:image" content="https://yourwebsite.com/img/banner.png">
-  <title>UI Portfolio</title>
-  <!-- Bootstrap CSS -->
+  <meta property="og:url" content="https://nakolaexpertsystems.vercel.app/">
+  <meta property="og:image" content="img/banner.png">
+  <title>Nakola Expert Systems — AI & Software Solutions</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Local Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <!-- Header -->
-  <header class="header sticky-top">
-    <div class="container d-flex justify-content-between align-items-center px-4 py-3">
-      <div class="d-flex align-items-center gap-3">
-        <a href="#" class="d-flex align-items-center text-decoration-none">
-          <img src="img/logo.png" alt="UI Portfolio Logo" class="logo">
-          <span class="ms-2 text-white fw-semibold">UI Portfolio</span>
-        </a>
-        <nav class="d-none d-md-flex gap-4 align-items-center">
-          <a href="#home" class="nav-link">Home</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#services" class="nav-link">Services</a>
-          <a href="#blog" class="nav-link">Blog</a>
-          <div class="dropdown">
-            <a href="#pages" class="nav-link dropdown-toggle" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
-              <li><a class="dropdown-item" href="#">Blog Page</a></li>
-              <li><a class="dropdown-item" href="#">Elements Page</a></li>
-              <li><a class="dropdown-item" href="#">404 Page</a></li>
-              <li><a class="dropdown-item" href="#">Landing Page</a></li>
-            </ul>
-          </div>
-          <a href="#contact" class="nav-link">Contact</a>
-          <button class="btn btn-primary hire-me-btn ms-2">Hire Me</button>
-          <!-- Search bar icon -->
-          <a href="#" class="nav-link" aria-label="Search">
-            <i class="fas fa-search text-white"></i>
-          </a>
-          <!-- Light/Dark mode toggle icon -->
-          <button id="theme-toggle" class="nav-link bg-transparent border-0" aria-label="Toggle theme">
-            <i class="fas fa-moon text-white" id="moon-icon"></i>
-            <i class="fas fa-sun text-white d-none" id="sun-icon"></i>
-          </button>
-        </nav>
+  <header class="header" id="header">
+    <div class="container d-flex justify-content-between align-items-center px-4">
+      <a href="#home" class="logo-link d-flex align-items-center text-decoration-none">
+        <span class="logo-icon"><i class="fas fa-microchip"></i></span>
+        <span class="logo-text">NAKOLA</span>
+      </a>
+      <nav class="nav-desktop d-none d-lg-flex align-items-center gap-4">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions d-flex align-items-center gap-3">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="moon-icon"></i>
+          <i class="fas fa-sun d-none" id="sun-icon"></i>
+        </button>
+        <a href="#contact" class="btn btn-cta d-none d-lg-inline-flex">Start a Project</a>
+        <button class="hamburger d-lg-none" id="hamburger" aria-label="Toggle menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
       </div>
     </div>
+    <nav class="nav-mobile d-lg-none" id="mobile-nav">
+      <a href="#home" class="nav-link-mobile">Home</a>
+      <a href="#about" class="nav-link-mobile">About</a>
+      <a href="#services" class="nav-link-mobile">Services</a>
+      <a href="#projects" class="nav-link-mobile">Projects</a>
+      <a href="#testimonials" class="nav-link-mobile">Testimonials</a>
+      <a href="#contact" class="nav-link-mobile">Contact</a>
+      <a href="#contact" class="btn btn-cta w-100 mt-3">Start a Project</a>
+    </nav>
   </header>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="container d-flex flex-column flex-md-row align-items-center px-4 py-5">
-      <div class="col-md-6">
-        <h1 class="display-4 fw-bold text-white">Hi, I'm John Watson</h1>
-        <h2 class="display-5 fw-light mt-2 text-white">
-          <span class="playing-words"> </span>
-        </h2>
-        <p class="mt-4 text-white">I love Graphic design and Photography and have been working on my portfolio since 2016. I can give your business a new creative start right away!</p>
-        <div class="mt-4 d-flex gap-3">
-          <button class="btn btn-primary hire-me-btn">Hire Me</button>
-          <button class="btn btn-outline-light portfolio-btn">My Portfolio</button>
+    <div class="hero-bg-effects">
+      <div class="hero-gradient-orb orb-1"></div>
+      <div class="hero-gradient-orb orb-2"></div>
+    </div>
+    <div class="container px-4">
+      <div class="row align-items-center min-vh-hero">
+        <div class="col-lg-7">
+          <p class="hero-tag"><i class="fas fa-bolt me-2"></i>AI-Powered Innovation from Nairobi</p>
+          <h1 class="hero-title">Building Intelligent Systems That <span class="text-gradient">Scale Businesses</span></h1>
+          <p class="hero-subtitle mt-4">We design and engineer high-performance software, AI solutions, and cloud architecture for forward-thinking organizations across Africa and beyond.</p>
+          <div class="mt-5 d-flex flex-wrap gap-3">
+            <a href="#contact" class="btn btn-cta btn-lg">Start Your Project Today <i class="fas fa-arrow-right ms-2"></i></a>
+            <a href="#projects" class="btn btn-outline-hero btn-lg">View Our Work</a>
+          </div>
+          <div class="hero-tech-stack mt-5">
+            <span class="tech-label">Tech we use:</span>
+            <div class="tech-icons">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">TensorFlow</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-6 mt-4 mt-md-0">
-        <img src="img/banner.png" alt="Profile Picture" class="img-fluid rounded">
+        <div class="col-lg-5 mt-5 mt-lg-0 text-center">
+          <div class="hero-visual">
+            <div class="hero-code-block">
+              <div class="code-header">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+                <span class="code-filename">nakola.ai</span>
+              </div>
+              <pre class="code-body"><code><span class="code-keyword">class</span> <span class="code-class">NakolaAI</span>:
+  <span class="code-keyword">def</span> <span class="code-func">build</span>(self, vision):
+    solution = self.engineer(vision)
+    solution.optimize()
+    solution.deploy()
+    <span class="code-keyword">return</span> <span class="code-string">"Business scaled ✓"</span></code></pre>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Experience Section -->
+  <!-- About Section -->
   <section id="about" class="section">
     <div class="container px-4">
-      <div class="row g-4">
-        <div class="col-md-6">
-          <img src="img/bio.jpg" alt="Bio Image" class="img-fluid rounded">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <div class="about-image-wrapper">
+            <img src="img/bio.jpg" alt="Nakola Expert Systems Team" class="img-fluid rounded-4">
+            <div class="about-badge">
+              <span class="badge-number">7+</span>
+              <span class="badge-text">Years of<br>Excellence</span>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <p class="section-subtitle">My Biography</p>
-          <h2 class="section-title">A Lead UI Designer & Web Developer Based In UK</h2>
-          <p class="mt-4 text-secondary">I love Graphic design and Photography and have been working on my portfolio since 2016. I can give your business a new Creative start right away! Contact me and we will discuss your projects!</p>
-          <div class="mt-4 d-flex flex-column flex-md-row gap-4">
-            <div>
-              <p><strong>Name:</strong> John Watson</p>
-              <p><strong>Email:</strong> example@email.com</p>
+        <div class="col-lg-6">
+          <p class="section-subtitle"><i class="fas fa-user-circle me-2"></i>About Us</p>
+          <h2 class="section-title">Engineering the Future from East Africa</h2>
+          <p class="mt-4 text-body-secondary">Nakola Expert Systems is a premium technology firm headquartered in Nairobi, Kenya. We specialize in artificial intelligence, enterprise software engineering, full-stack web and mobile development, cloud-native architecture, and strategic technology consulting.</p>
+          <p class="text-body-secondary">Our team combines deep technical expertise with a passion for solving real-world problems. From predictive analytics platforms to large-scale enterprise systems, we deliver solutions that are built to perform, built to last, and built to grow with your business.</p>
+          <div class="mt-4 row g-3">
+            <div class="col-sm-6">
+              <div class="about-info-item">
+                <i class="fas fa-map-marker-alt text-accent me-2"></i>
+                <span><strong>Based in:</strong> Nairobi, Kenya</span>
+              </div>
             </div>
-            <div>
-              <p><strong>From:</strong> London, UK</p>
-              <p><strong>Phone:</strong> +12 345 678 901</p>
+            <div class="col-sm-6">
+              <div class="about-info-item">
+                <i class="fas fa-envelope text-accent me-2"></i>
+                <span><strong>Email:</strong> hello@nakola.dev</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="about-info-item">
+                <i class="fas fa-globe text-accent me-2"></i>
+                <span><strong>Clients:</strong> Africa & Global</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="about-info-item">
+                <i class="fas fa-users text-accent me-2"></i>
+                <span><strong>Team:</strong> 10+ Engineers</span>
+              </div>
             </div>
           </div>
-          <div class="mt-4 d-flex gap-2 align-items-center">
-            <p>Follow me on</p>
-            <a href="#" class="text-teal" aria-label="Behance">
-              <i class="fab fa-behance"></i>
-            </a>
-            <a href="#" class="text-teal" aria-label="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" class="text-teal" aria-label="Twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </div>
-          <div class="mt-4 d-flex gap-3">
-            <button class="btn hire-me-btn">Hire Me</button>
-            <button class="btn download-cv-btn">Download CV</button>
+          <div class="mt-4 d-flex gap-3 align-items-center">
+            <span class="fw-semibold">Follow us:</span>
+            <a href="#" class="social-icon-sm" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-sm" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon-sm" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
           </div>
         </div>
       </div>
@@ -124,262 +163,371 @@
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="section">
+  <section id="services" class="section section-alt">
     <div class="container px-4">
-      <p class="section-subtitle text-center">My Services</p>
-      <h2 class="section-title text-center">What I Do For You</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="text-teal display-6 mb-3">📄</div>
-              <h3 class="h5 fw-semibold">Web Development</h3>
-              <p class="mt-2 text-secondary">Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque laudan.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="text-teal display-6 mb-3">📱</div>
-              <h3 class="h5 fw-semibold">App Development</h3>
-              <p class="mt-2 text-secondary">Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque laudan.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="text-teal display-6 mb-3">📷</div>
-              <h3 class="h5 fw-semibold">Photography</h3>
-              <p class="mt-2 text-secondary">Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque laudan.</p>
-            </div>
-          </div>
-        </div>
+      <div class="text-center mb-5">
+        <p class="section-subtitle"><i class="fas fa-cogs me-2"></i>Our Services</p>
+        <h2 class="section-title">What We Build For You</h2>
+        <p class="section-desc mx-auto">End-to-end technology solutions tailored to your business goals — from concept to deployment and beyond.</p>
       </div>
-      <div class="text-center mt-4">
-        <a href="#" class="text-teal text-decoration-underline">More Services →</a>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-brain"></i></div>
+            <h3 class="service-title">AI & Machine Learning</h3>
+            <p class="service-desc">Custom ML models, NLP pipelines, computer vision, and predictive analytics that transform raw data into business intelligence and automated decision-making.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-code"></i></div>
+            <h3 class="service-title">Full-Stack Web & Mobile</h3>
+            <p class="service-desc">Responsive web applications and native mobile experiences built with React, Next.js, Flutter, and Node.js — fast, beautiful, and conversion-optimized.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-building"></i></div>
+            <h3 class="service-title">Enterprise Systems</h3>
+            <p class="service-desc">Robust ERP, CRM, and workflow automation platforms engineered for scale. We build the backbone systems that run your operations smoothly.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+            <h3 class="service-title">UI/UX Design</h3>
+            <p class="service-desc">Human-centered design that delights users and drives engagement. From wireframes to polished interfaces, we create experiences people love.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-cloud"></i></div>
+            <h3 class="service-title">Cloud Architecture</h3>
+            <p class="service-desc">Scalable, secure cloud infrastructure on AWS, Azure, and GCP. We handle DevOps, CI/CD pipelines, containerization, and cost-optimized deployments.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+            <h3 class="service-title">Technology Consulting</h3>
+            <p class="service-desc">Strategic guidance on digital transformation, tech stack selection, architecture reviews, and AI adoption roadmaps for forward-thinking leadership.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section class="section bg-light">
-    <div class="container d-flex flex-column flex-md-row align-items-center px-4">
-      <div class="col-md-6">
-        <img src="img/skills.jpg" alt="Skills Image" class="img-fluid rounded">
-      </div>
-      <div class="col-md-6 mt-4 mt-md-0 ps-md-4">
-        <p class="section-subtitle">My Skills</p>
-        <h2 class="section-title">My Featured Skills</h2>
-        <p class="mt-4 text-secondary">I specialize in Branding and Strategy, and am passionate about creating Awesome Portfolio work. And I always ready to impress the audience with my Creativity.</p>
-        <div class="mt-4">
-          <div class="mb-3">
-            <p class="fw-semibold">UI/UX Design</p>
-            <div class="progress">
-              <div class="progress-bar bg-teal" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+  <section class="section">
+    <div class="container px-4">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <p class="section-subtitle"><i class="fas fa-layer-group me-2"></i>Our Expertise</p>
+          <h2 class="section-title">Technologies We Master</h2>
+          <p class="mt-4 text-body-secondary">We stay at the cutting edge of technology, constantly evolving our stack to deliver the most performant, maintainable, and future-proof solutions.</p>
+          <div class="mt-4">
+            <div class="skill-bar-item mb-4">
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-semibold">AI / Machine Learning</span>
+                <span class="text-accent fw-semibold">95%</span>
+              </div>
+              <div class="progress"><div class="progress-bar bg-accent" role="progressbar" style="width: 95%"></div></div>
             </div>
-          </div>
-          <div class="mb-3">
-            <p class="fw-semibold">Ideas & Technology</p>
-            <div class="progress">
-              <div class="progress-bar bg-teal" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="skill-bar-item mb-4">
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-semibold">Full-Stack Development</span>
+                <span class="text-accent fw-semibold">92%</span>
+              </div>
+              <div class="progress"><div class="progress-bar bg-accent" role="progressbar" style="width: 92%"></div></div>
             </div>
-          </div>
-          <div class="mb-3">
-            <p class="fw-semibold">Branding Design</p>
-            <div class="progress">
-              <div class="progress-bar bg-teal" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="skill-bar-item mb-4">
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-semibold">Cloud & DevOps</span>
+                <span class="text-accent fw-semibold">88%</span>
+              </div>
+              <div class="progress"><div class="progress-bar bg-accent" role="progressbar" style="width: 88%"></div></div>
             </div>
-          </div>
-          <div>
-            <p class="fw-semibold">Responsive Web Design</p>
-            <div class="progress">
-              <div class="progress-bar bg-teal" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="skill-bar-item">
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-semibold">UI/UX & Product Design</span>
+                <span class="text-accent fw-semibold">85%</span>
+              </div>
+              <div class="progress"><div class="progress-bar bg-accent" role="progressbar" style="width: 85%"></div></div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services and Profile Image Section -->
-  <section class="section bg-light">
-    <div class="container px-4 d-flex flex-column flex-md-row align-items-center">
-      <div class="col-md-6">
-        <div class="row row-cols-1 row-cols-sm-2 g-4">
-          <div class="col">
-            <div class="d-flex align-items-start gap-3">
-              <div class="text-teal fs-3">🌐</div>
-              <div>
-                <h3 class="h6 fw-semibold">Web Development</h3>
-                <p class="text-secondary">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="d-flex align-items-start gap-3">
-              <div class="text-teal fs-3">🎨</div>
-              <div>
-                <h3 class="h6 fw-semibold">Design Trends</h3>
-                <p class="text-secondary">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="d-flex align-items-start gap-3">
-              <div class="text-teal fs-3">🔍</div>
-              <div>
-                <h3 class="h6 fw-semibold">Research & Analysis</h3>
-                <p class="text-secondary">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="d-flex align-items-start gap-3">
-              <div class="text-teal fs-3">🤝</div>
-              <div>
-                <h3 class="h6 fw-semibold">Customer Support</h3>
-                <p class="text-secondary">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="d-flex align-items-start gap-3">
-              <div class="text-teal fs-3">📱</div>
-              <div>
-                <h3 class="h6 fw-semibold">Responsive Design</h3>
-                <p class="text-secondary">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="d-flex align-items-start gap-3">
-              <div class="text-teal fs-3">🖼️</div>
-              <div>
-                <h3 class="h6 fw-semibold">PSD Design</h3>
-                <p class="text-secondary">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-              </div>
-            </div>
+        <div class="col-lg-6">
+          <div class="tech-grid">
+            <div class="tech-grid-item"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="tech-grid-item"><i class="fab fa-react"></i><span>React</span></div>
+            <div class="tech-grid-item"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+            <div class="tech-grid-item"><i class="fab fa-aws"></i><span>AWS</span></div>
+            <div class="tech-grid-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+            <div class="tech-grid-item"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+            <div class="tech-grid-item"><i class="fab fa-figma"></i><span>Figma</span></div>
+            <div class="tech-grid-item"><i class="fas fa-fire"></i><span>Firebase</span></div>
+            <div class="tech-grid-item"><i class="fab fa-js"></i><span>TypeScript</span></div>
+            <div class="tech-grid-item"><i class="fas fa-robot"></i><span>TensorFlow</span></div>
+            <div class="tech-grid-item"><i class="fab fa-flutter"></i><span>Flutter</span></div>
+            <div class="tech-grid-item"><i class="fas fa-wind"></i><span>Next.js</span></div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 mt-4 mt-md-0 ps-md-4">
-        <img src="img/banner.png" alt="Profile Picture" class="img-fluid rounded">
       </div>
     </div>
   </section>
 
   <!-- Stats Section -->
-  <section class="section bg-light">
+  <section class="section section-stats">
     <div class="container px-4">
-      <div class="row row-cols-1 row-cols-md-4 g-4 text-center">
+      <div class="row row-cols-2 row-cols-md-4 g-4 text-center">
         <div class="col">
-          <h3 class="display-6 fw-bold">135</h3>
-          <p class="mt-2 text-secondary">Finished Projects</p>
+          <div class="stat-item">
+            <h3 class="stat-number" data-count="85">0</h3>
+            <p class="stat-label">Projects Delivered</p>
+          </div>
         </div>
         <div class="col">
-          <h3 class="display-6 fw-bold">225</h3>
-          <p class="mt-2 text-secondary">Working Hours</p>
+          <div class="stat-item">
+            <h3 class="stat-number" data-count="40">0</h3>
+            <p class="stat-label">Happy Clients</p>
+          </div>
         </div>
         <div class="col">
-          <h3 class="display-6 fw-bold">115</h3>
-          <p class="mt-2 text-secondary">Online Support</p>
+          <div class="stat-item">
+            <h3 class="stat-number" data-count="15000">0</h3>
+            <p class="stat-label">Hours of Engineering</p>
+          </div>
         </div>
         <div class="col">
-          <h3 class="display-6 fw-bold">272</h3>
-          <p class="mt-2 text-secondary">Happy Customers</p>
+          <div class="stat-item">
+            <h3 class="stat-number" data-count="12">0</h3>
+            <p class="stat-label">Countries Served</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="section">
+  <!-- Projects Section -->
+  <section id="projects" class="section">
     <div class="container px-4">
-      <p class="section-subtitle text-center">My Portfolio</p>
-      <h2 class="section-title text-center">My Success Work</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <img src="img/blog1.jpg" alt="Work 1" class="img-fluid rounded">
+      <div class="text-center mb-5">
+        <p class="section-subtitle"><i class="fas fa-rocket me-2"></i>Our Projects</p>
+        <h2 class="section-title">Featured Work</h2>
+        <p class="section-desc mx-auto">Real solutions built for real businesses. Here is a selection of the work we are proud of.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/blog1.jpg" alt="AI-Powered Supply Chain Optimizer">
+              <div class="project-overlay"><span class="project-category">AI / Logistics</span></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">AI-Powered Supply Chain Optimizer</h3>
+              <p class="project-desc">Predictive analytics platform that reduced logistics costs by 34% for a major East African distributor using real-time demand forecasting.</p>
+              <div class="project-tags"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">AWS</span><span class="tag">React</span></div>
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <img src="img/blog2.jpg" alt="Work 2" class="img-fluid rounded">
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/blog2.jpg" alt="Enterprise CRM Platform">
+              <div class="project-overlay"><span class="project-category">Enterprise / SaaS</span></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Enterprise CRM Platform</h3>
+              <p class="project-desc">Custom-built CRM handling 50k+ contacts with automated pipelines, AI lead scoring, and real-time dashboards for a fintech startup.</p>
+              <div class="project-tags"><span class="tag">Next.js</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span></div>
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <img src="img/blog3.jpg" alt="Work 3" class="img-fluid rounded">
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/blog3.jpg" alt="Real-Time Analytics Dashboard">
+              <div class="project-overlay"><span class="project-category">Data / Visualization</span></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Real-Time Analytics Dashboard</h3>
+              <p class="project-desc">High-performance data visualization platform processing 2M+ events daily with sub-second query times for a telecoms provider.</p>
+              <div class="project-tags"><span class="tag">React</span><span class="tag">D3.js</span><span class="tag">Kafka</span><span class="tag">ClickHouse</span></div>
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <img src="img/blog4.jpg" alt="Work 4" class="img-fluid rounded">
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/blog4.jpg" alt="HealthTech Mobile Platform">
+              <div class="project-overlay"><span class="project-category">Mobile / Health</span></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">HealthTech Mobile Platform</h3>
+              <p class="project-desc">Telemedicine app connecting 200+ clinics with patients across Kenya, featuring scheduling, video calls, and AI symptom triage.</p>
+              <div class="project-tags"><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">Python</span><span class="tag">WebRTC</span></div>
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <img src="img/blog5.jpg" alt="Work 5" class="img-fluid rounded">
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/blog5.jpg" alt="Smart Agriculture IoT System">
+              <div class="project-overlay"><span class="project-category">IoT / AgriTech</span></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Smart Agriculture IoT System</h3>
+              <p class="project-desc">End-to-end IoT platform with sensor networks, satellite imaging, and ML-based crop yield predictions for commercial farms.</p>
+              <div class="project-tags"><span class="tag">Python</span><span class="tag">MQTT</span><span class="tag">Azure IoT</span><span class="tag">React</span></div>
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <img src="img/blog6.jpg" alt="Work 6" class="img-fluid rounded">
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/blog6.jpg" alt="Digital Banking Backend">
+              <div class="project-overlay"><span class="project-category">FinTech / Banking</span></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Digital Banking Backend</h3>
+              <p class="project-desc">Microservices architecture powering a digital bank with real-time transactions, KYC automation, and fraud detection at scale.</p>
+              <div class="project-tags"><span class="tag">Go</span><span class="tag">Kubernetes</span><span class="tag">gRPC</span><span class="tag">PostgreSQL</span></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Partnered Companies Logos -->
-  <section class="section companies-section">
-    <div class="container px-4 text-center">
-      <div class="logos-container">
-        <div class="logos-track">
-          <img src="img/logo1.png" alt="Company 1" class="company-logo">
-          <img src="img/logo2.png" alt="Company 2" class="company-logo">
-          <img src="img/logo3.png" alt="Company 3" class="company-logo">
-          <img src="img/logo4.png" alt="Company 4" class="company-logo">
-          <img src="img/logo5.png" alt="Company 5" class="company-logo">
-          <!-- Duplicate logos for seamless looping -->
-          <img src="img/logo1.png" alt="Company 1" class="company-logo">
-          <img src="img/logo2.png" alt="Company 2" class="company-logo">
-          <img src="img/logo3.png" alt="Company 3" class="company-logo">
-          <img src="img/logo4.png" alt="Company 4" class="company-logo">
-          <img src="img/logo5.png" alt="Company 5" class="company-logo">
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section section-alt">
+    <div class="container px-4">
+      <div class="text-center mb-5">
+        <p class="section-subtitle"><i class="fas fa-quote-left me-2"></i>Testimonials</p>
+        <h2 class="section-title">What Our Clients Say</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">"Nakola transformed our supply chain with an AI solution that paid for itself in 3 months. Their team truly understands enterprise-grade engineering."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><i class="fas fa-user-circle"></i></div>
+              <div><strong>Amara Osei</strong><span>COO, PanAfrica Logistics</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">"From concept to launch in 8 weeks. The mobile app they built doubled our patient onboarding rate. Exceptional quality and communication throughout."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><i class="fas fa-user-circle"></i></div>
+              <div><strong>Dr. Wanjiku Mwangi</strong><span>Founder, MedConnect Kenya</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">"We needed a cloud migration partner who understood African infrastructure challenges. Nakola nailed it — zero downtime, 60% cost reduction."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><i class="fas fa-user-circle"></i></div>
+              <div><strong>James Kariuki</strong><span>CTO, Savannah Finance</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+            <p class="testimonial-text">"Their UI/UX team designed a dashboard our users actually enjoy using. The analytics platform is fast, intuitive, and our retention is up 45%."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><i class="fas fa-user-circle"></i></div>
+              <div><strong>Fatima El-Amin</strong><span>Product Lead, DataStream Inc.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA Section -->
+  <section id="contact" class="section section-contact">
+    <div class="container px-4">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <p class="section-subtitle text-white"><i class="fas fa-paper-plane me-2"></i>Get In Touch</p>
+          <h2 class="section-title text-white">Let's Build Something Extraordinary</h2>
+          <p class="text-white-50 mt-4">Whether you have a clear vision or just an idea, we'll help you bring it to life with the right technology. Let's start the conversation.</p>
+          <div class="contact-info-list mt-4">
+            <div class="contact-info-item"><i class="fas fa-envelope"></i><span>hello@nakola.dev</span></div>
+            <div class="contact-info-item"><i class="fas fa-map-marker-alt"></i><span>Nairobi, Kenya</span></div>
+            <div class="contact-info-item"><i class="fas fa-clock"></i><span>Mon - Fri, 8:00 AM - 6:00 PM EAT</span></div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <form class="contact-form" id="contact-form">
+            <div class="row g-3">
+              <div class="col-sm-6"><input type="text" class="form-control" placeholder="Your Name" required></div>
+              <div class="col-sm-6"><input type="email" class="form-control" placeholder="Your Email" required></div>
+              <div class="col-12"><input type="text" class="form-control" placeholder="Subject"></div>
+              <div class="col-12"><textarea class="form-control" rows="5" placeholder="Tell us about your project..." required></textarea></div>
+              <div class="col-12"><button type="submit" class="btn btn-cta btn-lg w-100">Start Your Project Today <i class="fas fa-arrow-right ms-2"></i></button></div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer id="contact" class="footer">
-    <div class="container px-4 text-center">
-      <!-- Logo and Branding -->
-      <div class="mb-4">
-        <a href="#" class="d-flex justify-content-center align-items-center text-decoration-none">
-          <img src="img/logo.png" alt="UI Portfolio Logo" class="logo">
-          <span class="ms-2 text-white fw-semibold">UI Portfolio</span>
-        </a>
-      </div>
-      <!-- Contact Information -->
-      <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-4">
-        <p class="text-white mb-0"><i class="fas fa-phone-alt me-2"></i>+12 345 678 900</p>
-        <p class="text-white mb-0"><i class="fas fa-envelope me-2"></i>example@email.com</p>
-        <p class="text-white mb-0"><i class="fas fa-map-marker-alt me-2"></i>208 Avenue, UK - 62617</p>
-      </div>
-      <!-- Copyright and Social Media Icons -->
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 mb-4">
-        <p class="text-white mb-0">© 2025 UI Portfolio. All Rights Reserved | WordPress Theme by W3Layouts</p>
-        <div class="d-flex align-items-center gap-3">
-          <a href="https://facebook.com" class="social-link" aria-label="Facebook">
-            <i class="fab fa-facebook-f"></i>
+  <footer class="footer">
+    <div class="container px-4">
+      <div class="row g-4 py-5">
+        <div class="col-lg-4 col-md-6">
+          <a href="#home" class="logo-link d-flex align-items-center text-decoration-none mb-3">
+            <span class="logo-icon"><i class="fas fa-microchip"></i></span>
+            <span class="logo-text">NAKOLA</span>
           </a>
-          <a href="https://twitter.com" class="social-link" aria-label="Twitter">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://google.com" class="social-link" aria-label="Google">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="https://pinterest.com" class="social-link" aria-label="Pinterest">
-            <i class="fab fa-pinterest-p"></i>
-          </a>
-          <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
+          <p class="footer-tagline">Intelligent Solutions. Built in Nairobi.</p>
+          <p class="text-body-secondary small">We engineer high-performance AI & software solutions that help businesses operate smarter, scale faster, and stay ahead of the curve.</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Contact Us</h5>
+          <ul class="footer-contact-list">
+            <li><i class="fas fa-envelope me-2"></i>hello@nakola.dev</li>
+            <li><i class="fas fa-map-marker-alt me-2"></i>Nairobi, Kenya</li>
+            <li><i class="fas fa-clock me-2"></i>Mon - Fri, 8AM - 6PM</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Connect With Us</h5>
+          <div class="footer-social-icons">
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon" aria-label="Behance"><i class="fab fa-behance"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+          <p class="small text-body-secondary mt-3">Follow us for insights on AI, engineering, and tech in Africa.</p>
         </div>
       </div>
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 Nakola Expert Systems. All rights reserved.</p>
+      </div>
+      <p class="text-center text-gray-500 text-sm mt-6">
+        Built with precision by <a href="https://nakolaexpertsystems.vercel.app/" target="_blank" class="text-blue-400 hover:underline">Nakola Expert Systems</a> - Intelligent solutions for forward-thinking businesses.
+      </p>
     </div>
   </footer>
 
@@ -388,9 +536,7 @@
     <i class="fas fa-arrow-up"></i>
   </button>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <!-- Custom JS -->
-  <script src="js/script.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

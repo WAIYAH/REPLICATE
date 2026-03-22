@@ -1,0 +1,8 @@
+# robots.txt — Nakola Expert Systems Portfolio
+# https://nakolaexpertsystems.vercel.app/
+
+User-agent: *
+Allow: /
+
+# Sitemap (uncomment when available)
+# Sitemap: https://nakolaexpertsystems.vercel.app/sitemap.xml
